@@ -1,0 +1,21 @@
+<p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        CARRITO
+        <i class="bi bi-cart4"></i>
+    </button>
+    
+</p>
+<div class="collapse" id="collapseExample">
+    <div class="card card-body">
+        <div *ngFor="let producto of productosCarrito; let x = index">
+            <strong>{{producto.nombre}}</strong> - {{producto.precio}} x {{cantidadesProductos[x]}}
+        </div>
+        <hr>
+        <strong>Importe:</strong> {{importeTotal}} €
+        <strong>Total productos</strong> {{cantidadTotal}}
+    </div>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        PAGAR
+        <i class="bi bi-credit-card-fill"></i>
+    </button>
+</div>

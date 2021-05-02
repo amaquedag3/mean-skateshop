@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+    <div class="card">
+    <header class="card-header">
+      <h4 class="card-title mt-2">Login</h4>
+    </header>
+    <article class="card-body">
+    <form #clienteForm="ngForm">
+      <div class="form-group">
+        <label>Introdce tu Email</label>
+        <a id="login"></a>
+        <input [(ngModel)] = "inputCliente.username" type="email" class="form-control" placeholder="" name="email">
+      </div> <!-- form-group end.// -->
+      <div class="form-group">
+        <label>Introduce la Contraseña</label>
+          <input [(ngModel)] = "inputCliente.pass" class="form-control" type="password" name="pass">
+      </div> <!-- form-group end.// -->  
+        <div class="form-group" style="margin-top: 2%; text-align: center">
+            <a type="submit" class="btn btn-primary btn-block" (click)="onLogin(clienteForm)"> LogIn  </a>
+        </div> <!-- form-group// -->                                               
+    </form>
+    </article> <!-- card-body end .// -->
+    </div> <!-- card.// -->
+    </div> <!-- col.//-->
+    
+    </div> <!-- row.//-->
+    
+    
+    </div> 
+    <!--container end.//-->
+    

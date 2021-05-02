@@ -1,0 +1,19 @@
+.col-lg-2{
+    margin-left: -10%;
+    margin-top: 3%;
+}
+
+.list-group-item{
+    transition: 0.5s;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.list-group-item:hover{
+    margin-left: 5%;
+}
+
+a{
+    font-family: 'Rockwell';
+    text-decoration: none;
+    color:rgb(7, 4, 31);
+    font-size: large;
+}
